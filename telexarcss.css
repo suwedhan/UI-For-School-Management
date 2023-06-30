@@ -1,0 +1,86 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 20px;
+    background-image: url(mainbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
+    grid-gap: 100px;
+    margin-top: 20px;
+  }
+  
+  
+  section {
+    background-color: #97c9ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+/*   
+  .card {
+
+  }
+
+  .card1{
+ 
+  }
+
+  .card2{
+   
+  }
+
+  .card3{
+  
+  } */
+  
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+  }
+  

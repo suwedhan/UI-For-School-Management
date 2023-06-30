@@ -1,0 +1,70 @@
+<!-- HTML code for the registration page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration</title>
+</head>
+
+<body>
+
+        <!-- <header>
+            <h1>School Management System</h1>
+            <nav>
+              <ul>
+                <li><a href="Telexar.html" class="active">Dashboard</a></li>
+                <li><a href="register.html" class="active">Student Registration</a></li>
+                <li><a href="Fee.html" class="active">Fee Collection</a></li>
+                <li><a href="Tlogin.html" class="active">Logout</a></li>
+              </ul>
+            </nav>
+          </header>
+     -->
+
+    <div class="container">
+        <!-- Registration form -->
+        <form id="registrationForm">
+            <h1>Student Registration</h1>
+            <div class="form">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="formfield" required>
+
+                <label for="admissionNumber">Admission Number</label>
+                <input type="number" id="admissionNumber" class="formfield" required>
+
+                <label for="class">Class</label>
+                <input type="text" id="class" class="formfield" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="formfield" required>
+
+                <label for="Password">Password</label>
+                <input type="password" id="Password" class="formfield" required>
+
+                <label for="password">Confirm Password</label>
+                <input type="password" id="conf_password" class="formfield" required>
+
+            </div>
+
+            <input type="submit" class="btn" value="Register">
+
+            <div class="regText">
+                <h5>Already Registered? Click Here <a href="Tlogin.html">Student Login</a></h5>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript code for form submission
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+            
+            // Perform form validation and registration process here
+            
+            // Redirect to the login page
+            window.location.href = 'Telexar.html';
+        });
+    </script>
+</body>
+</html>

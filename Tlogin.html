@@ -1,0 +1,56 @@
+<!-- HTML code for the login page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- Header section (currently commented out) -->
+    <!--
+    <header>
+        <h1>School Management System</h1>
+        <nav>
+          <ul>
+            <li><a href="Telexar.html" class="active">Dashboard</a></li>
+            <li><a href="register.html" class="active">Student Registration</a></li>
+            <li><a href="Fee.html" class="active">Fee Collection</a></li>
+          </ul>
+        </nav>
+    </header>
+    -->
+
+    <div class="container">
+        <!-- Login form -->
+        <form id="loginForm">
+            <h1>Student Login</h1>
+            <div class="form">
+                <label for="">Student ID</label>
+                <input type="text" class="formfield" required>
+
+                <label for="">Password</label>
+                <input type="password" class="formfield" required>
+            </div>
+
+            <input type="submit" class="btn" value="Login">
+
+            <div class="regText">
+                <h5>Not Registered Yet? Click Here <a href="register.html">Student Registration</a></h5> 
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript code for form submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+
+            // Redirect to "Telexar.html" after form submission
+            window.location.href = 'Telexar.html';
+        });
+    </script>
+</body>
+</html>

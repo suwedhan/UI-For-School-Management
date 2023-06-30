@@ -1,0 +1,48 @@
+<!-- This is an HTML document for a school management system -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Fee.css"> <!-- External CSS file for styling -->
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>School Management System</h1> <!-- Heading for the web page -->
+        <nav>
+          <ul>
+            <li><a href="Telexar.html" class="active">Dashboard</a></li> <!-- Navigation link to the dashboard -->
+            <li><a href="register.html" class="active">Student Registration</a></li> <!-- Navigation link to the student registration page -->
+            <li><a href="Fee.html" class="active">Fee Collection</a></li> <!-- Navigation link to the fee collection page -->
+            <li><a href="Tlogin.html" class="active">Logout</a></li> <!-- Navigation link to the logout page -->
+          </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Fee collection form -->
+        <form id="Feeform">
+            <div class="form">
+                <label for="">Student Name:</label>
+                <input type="text" class="formfield" required> <!-- Input field for student name -->
+
+                <label for="">Amount:</label>
+                <input type="number" class="formfield" required> <!-- Input field for fee amount -->
+
+                <label for="">Fee Status:</label>
+                <select id="Status" required>
+                    <option value="">Select Status</option> <!-- Default option in the dropdown -->
+                    <option value="fullyPaid">Fully Paid</option> <!-- Option for fully paid status -->
+                    <option value="partiallyPaid">Partially Paid</option> <!-- Option for partially paid status -->
+                    <option value="notPaid">Not Paid</option> <!-- Option for not paid status -->
+                </select>
+            </div>
+
+            <input type="Submit" class="btn" value="Update"> <!-- Submit button for updating the fee status -->
+        </form>
+    </div>
+
+</body>
+</html>
